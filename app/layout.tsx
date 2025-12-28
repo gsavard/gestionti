@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Space_Mono } from 'next/font/google';
+import './globals.css';
 
 const spaceMono = Space_Mono({ 
   weight: ['400', '700'],
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={spaceMono.variable}>
-      <body>{children}</body>
+    <html lang="fr">
+      <body className={spaceMono.variable}>{children}</body>
     </html>
   );
 }

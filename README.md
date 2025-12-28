@@ -1,68 +1,81 @@
 # GstionTI - Système de gestion d'achats
 
-Application web complète de gestion d'achats avec Next.js, TypeScript et Tailwind CSS.
+Application web complète de gestion d'achats et d'inventaire de matériel informatique.
 
-## 🎯 Nouveautés de cette version
+## 🚀 Démarrage rapide
 
-### ✨ Menus réorganisés
-- **Menu "Gestion"** : Commandes, Créer commande, Approbations, Rapports
-- **Menu "Configuration"** : Utilisateurs
-- Menus déroulants modernes avec fermeture automatique
-- Navigation simplifiée sur mobile
-
-### 🎨 Identité visuelle
-- Logo GstionTI intégré (page de connexion, navigation, rapports)
-- Nom du projet mis à jour partout
-- Design cohérent et professionnel
-
-## 📦 Installation rapide
+### Installation
 
 ```bash
 npm install
-npm run dev
-# Ouvrir http://localhost:3000
 ```
 
-## 🚀 Déploiement sur Vercel
+### Développement
 
 ```bash
-git add .
-git commit -m "Update GstionTI"
-git push
+npm run dev
 ```
 
-Vercel redéploie automatiquement ! ✅
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-## 🔐 Comptes de test
+### Build de production
+
+```bash
+npm run build
+npm start
+```
+
+## 📦 Fonctionnalités
+
+### Gestion des commandes
+- Création de commandes d'achat
+- Workflow d'approbation
+- Suivi des statuts
+- Rapports imprimables
+
+### Gestion de l'inventaire
+- Liste complète des produits
+- Recherche et filtres avancés
+- Gestion des localisations
+- Gestion des catégories et statuts
+- Conversion de commandes en inventaire
+
+### Administration
+- Gestion des utilisateurs
+- Rôles (Demandeur, Acheteur, Approbateur)
+- Configuration système
+
+## 👥 Comptes de démonstration
 
 - marie@company.com (Demandeur)
 - jean@company.com (Acheteur)
 - sophie@company.com (Approbateur)
 - luc@company.com (Approbateur)
 
-## 📁 Structure
+*Mot de passe : n'importe quoi*
 
+## 🛠️ Technologies
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Lucide React (icônes)
+
+## 📝 Déploiement
+
+### Vercel (recommandé)
+
+1. Poussez votre code sur GitHub
+2. Importez le projet sur [vercel.com](https://vercel.com)
+3. Déployez automatiquement
+
+### Autre plateforme
+
+```bash
+npm run build
+npm start
 ```
-gstionti/
-├── app/
-│   ├── page.tsx       # Application avec menus déroulants
-│   ├── layout.tsx
-│   └── globals.css
-├── public/
-│   └── logo.png      # Logo GstionTI
-└── package.json
-```
 
-## ✨ Fonctionnalités
+## 📄 License
 
-✅ Gestion utilisateurs (CRUD)  
-✅ Création de commandes  
-✅ Workflow d'approbation  
-✅ Page dédiée Approbations  
-✅ Rapports imprimables  
-✅ Menus déroulants organisés  
-✅ Design responsive  
-
----
-
-**Version 2.0** • Décembre 2024
+Propriétaire - Tous droits réservés

@@ -2,18 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Print Styles */
+/* Styles pour l'impression */
 @media print {
-  @page {
-    size: A4;
-    margin: 1.5cm;
-  }
-  
-  body {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-  
   .print\:hidden {
     display: none !important;
   }
@@ -24,99 +14,26 @@
   
   .print\:break-inside-avoid {
     break-inside: avoid;
-    page-break-inside: avoid;
   }
   
-  .print\:shadow-none {
-    box-shadow: none !important;
-  }
+  .print\:text-emerald-600 { color: #059669; }
+  .print\:text-emerald-900 { color: #064e3b; }
+  .print\:text-amber-600 { color: #d97706; }
+  .print\:text-amber-900 { color: #78350f; }
+  .print\:text-blue-600 { color: #2563eb; }
+  .print\:text-blue-900 { color: #1e3a8a; }
   
-  .print\:border {
-    border-width: 1px !important;
-  }
+  .print\:bg-emerald-100 { background-color: #d1fae5; }
+  .print\:bg-amber-100 { background-color: #fef3c7; }
+  .print\:bg-blue-100 { background-color: #dbeafe; }
+  .print\:bg-white { background-color: #ffffff; }
   
-  .print\:border-2 {
-    border-width: 2px !important;
-  }
+  .print\:border-emerald-500 { border-color: #10b981; }
+  .print\:border-amber-500 { border-color: #f59e0b; }
+  .print\:border-blue-500 { border-color: #3b82f6; }
+  .print\:border-blue-300 { border-color: #93c5fd; }
+  .print\:border { border-width: 1px; }
+  .print\:border-2 { border-width: 2px; }
   
-  /* Keep colors for status badges */
-  .print\:bg-white {
-    background-color: white !important;
-  }
-  
-  .print\:bg-emerald-100 {
-    background-color: #d1fae5 !important;
-  }
-  
-  .print\:bg-amber-100 {
-    background-color: #fef3c7 !important;
-  }
-  
-  .print\:bg-blue-100 {
-    background-color: #dbeafe !important;
-  }
-  
-  .print\:text-emerald-600 {
-    color: #059669 !important;
-  }
-  
-  .print\:text-emerald-700 {
-    color: #047857 !important;
-  }
-  
-  .print\:text-emerald-900 {
-    color: #064e3b !important;
-  }
-  
-  .print\:text-amber-600 {
-    color: #d97706 !important;
-  }
-  
-  .print\:text-amber-700 {
-    color: #b45309 !important;
-  }
-  
-  .print\:text-amber-900 {
-    color: #78350f !important;
-  }
-  
-  .print\:text-blue-600 {
-    color: #2563eb !important;
-  }
-  
-  .print\:text-blue-700 {
-    color: #1d4ed8 !important;
-  }
-  
-  .print\:text-blue-900 {
-    color: #1e3a8a !important;
-  }
-  
-  .print\:border-emerald-500 {
-    border-color: #10b981 !important;
-  }
-  
-  .print\:border-amber-500 {
-    border-color: #f59e0b !important;
-  }
-  
-  .print\:border-blue-500 {
-    border-color: #3b82f6 !important;
-  }
-  
-  .print\:border-blue-300 {
-    border-color: #93c5fd !important;
-  }
-  
-  .print\:hover\:border-slate-200:hover {
-    border-color: #e2e8f0 !important;
-  }
-  
-  .print\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  }
-  
-  .print\:gap-4 {
-    gap: 1rem !important;
-  }
+  .print\:shadow-none { box-shadow: none; }
 }
